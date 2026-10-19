@@ -29,7 +29,7 @@ class UsersManagersTests(TestCase):
         self.assertTrue(admin_user.is_staff)
         self.assertTrue(admin_user.is_superuser)
 
-class SignupPageTests(TestCase):  # new 
+class SignupPageTests(TestCase):  
     def test_url_exists_at_correct_location_signupview(self): 
         response = self.client.get("/accounts/signup/") 
         self.assertEqual(response.status_code, 200) 
